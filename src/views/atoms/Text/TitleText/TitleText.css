@@ -5,3 +5,11 @@
   text-align: center;
   cursor: default;
 }
+@media screen and (min-width: 700px) {
+  .left {
+    text-align: left;
+  }
+  .right {
+    text-align: right;
+  }
+}

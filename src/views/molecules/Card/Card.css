@@ -1,5 +1,31 @@
 .card-container {
-  width: 80%;
-  max-width: 600px;
-  background-color: blueviolet;
+  width: 310px;
+  height: 340px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 3px 4px 6px 3px #10f86b;
+  background-color: white;
+  color: #10f86b;
+}
+.card-container:hover {
+  box-shadow: 3px 4px 6px 3px #f810e3;
+  color: #f810e3;
+}
+.card-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.arrow {
+  width: 35px;
+  height: 50px;
+  cursor: pointer;
+}
+.arrow:hover {
+  transform: scale(1.1);
 }

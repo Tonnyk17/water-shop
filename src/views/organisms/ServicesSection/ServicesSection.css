@@ -1,0 +1,21 @@
+.services-section-container {
+  width: 90%;
+  margin: 30px auto;
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 700px) {
+  .services-section-container {
+    width: 70%;
+  }
+  .left {
+    flex-direction: row;
+  }
+  .right {
+    flex-direction: row-reverse;
+  }
+}
