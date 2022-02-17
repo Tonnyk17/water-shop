@@ -7,7 +7,7 @@ export const MenuItem = ({content}) => {
         <>
             <div className="menu-item-container">
                 <div className="menu-item-title">
-                    <MenuText content={'Hella'}/>
+                    <MenuText content={content}/>
                 </div>
                 <ul className="item-list-container">
                     <li className="list-item"><MenuText content={'Venta'}/></li>
