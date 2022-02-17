@@ -1,0 +1,17 @@
+.welcome-section-container {
+  margin-top: 50px;
+  width: 100%;
+  height: calc(100vh - 50px);
+  background-image: url("https://www.sincable.mx/wp-content/uploads/2020/02/Dispensador-de-agua-0-Belchonock-108721485-scaled.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.welcome-title-container {
+  background-color: rgba(14, 82, 41, 0.5);
+  width: 100%;
+  height: calc(100vh - 50px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

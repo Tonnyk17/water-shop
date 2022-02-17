@@ -1,10 +1,10 @@
 import './App.css';
-import { Navbar } from './views/organisms/Navbar/Navbar';
+import { Main } from './views/pages/Main/Main';
 
 function App() {
   return (
     <>
-      <Navbar/>
+      <Main/>
     </>
   );
 }

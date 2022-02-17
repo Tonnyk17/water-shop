@@ -1,5 +1,4 @@
 import React from "react";
-import { TitleText } from "../../atoms/Text/TitleText/TitleText";
 import { MenuItem } from "../../molecules/MenuItem/MenuItem";
 import './Navbar.css';
 
@@ -7,7 +6,7 @@ export const Navbar = () => {
     return(
         <>
             <div className="navbar">
-                <TitleText content={'WaterShop'}/>
+                <h1 className="navbar-title">WaterShop</h1>
                 <div className="menu-container">
                     <MenuItem/>
                     <MenuItem/>

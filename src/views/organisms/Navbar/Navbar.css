@@ -8,6 +8,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+.navbar-title {
+  margin: 0 10px;
+  color: white;
+  cursor: pointer;
 }
 .menu-container {
   width: 100%;
