@@ -10,8 +10,8 @@ export const MenuItem = ({content}) => {
                     <MenuText content={content}/>
                 </div>
                 <ul className="item-list-container">
-                    <li className="list-item"><MenuText content={'Venta'}/></li>
-                    <li className="list-item"><MenuText content={'Renta'}/></li>
+                    <li className="list-item"><MenuText content={'Venta de dispensadores'}/></li>
+                    <li className="list-item"><MenuText content={'Renta de dispensadores'}/></li>
                 </ul>
             </div>
         </>

@@ -1,17 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import { TitleText } from "../../atoms/Text/TitleText/TitleText";
 import './Form.css';
 
 export const Form = () => {
-    const handleSubmit = (e) => {
-        e.preventDefault()
-        console.log(e.target.value)
+    const [contactData, setContactData] = useState({
+        name: '',
+        phone: '',
+        email: '',
+        message: ''
+    })
+    const handleChange = (e) => {
+        setContactData({
+            ...contactData,
+            [e.target.name]: e.target.value
+        })
     }
     return(
         <>
             <div className="form-container">
                 <TitleText content={'Contacto'}/>
-                <form  className="form" onSubmit={handleSubmit}>
+                <form  
+                    className="form" 
+                    action={`
+                        mailto:tonykurosaki117@gmail.com?subject=Contacto&body=
+                        Nombre%3A${contactData.name}%0A
+                        Telefono%3A${contactData.phone}%0A
+                        Correo%3A${contactData.email}%0A
+                        Mensaje%3A${contactData.message}
+                    `}
+                    method="post"
+                >
                     <label htmlFor="name">
                         Nombre completo
                     </label>
@@ -22,6 +40,7 @@ export const Form = () => {
                         className="input"
                         placeholder="Elliot Alderson"
                         required
+                        onChange={handleChange}
                     />
                     <label htmlFor="phone">
                         Telefono
@@ -33,6 +52,7 @@ export const Form = () => {
                         className="input"
                         placeholder="5555555555"
                         required
+                        onChange={handleChange}
                     />
                     <label htmlFor="email">
                         Correo electronico
@@ -44,6 +64,7 @@ export const Form = () => {
                         className="input"
                         placeholder="correo@correo.com"
                         required
+                        onChange={handleChange}
                     />
                     <label htmlFor="message">
                         Dejanos un mensaje
@@ -55,6 +76,7 @@ export const Form = () => {
                         rows="10" 
                         placeholder="Escribe un mensaje..."
                         className="input"
+                        onChange={handleChange}
                     />
                     <button type="submit">Enviar</button>
                 </form>
