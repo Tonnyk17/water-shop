@@ -1,10 +1,10 @@
 import './App.css';
-import { MenuText } from './views/atoms/Text/MenuText/MenuText';
+import { Navbar } from './views/organisms/Navbar/Navbar';
 
 function App() {
   return (
     <>
-      <MenuText content={'Hella'}/>
+      <Navbar/>
     </>
   );
 }
