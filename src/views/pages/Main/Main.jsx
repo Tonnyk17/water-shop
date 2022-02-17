@@ -15,10 +15,6 @@ export const Main = () => {
     useEffect(() => {
         dispatch(getProducts())
     },[])
-
-    useEffect(() => {
-        console.log(selector)
-    },[selector])
     return(
         <>
             <Navbar/>
