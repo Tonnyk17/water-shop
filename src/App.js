@@ -1,10 +1,15 @@
 import './App.css';
 import { Main } from './views/pages/Main/Main';
+import {Provider} from 'react-redux'
+import { generateStore } from './redux/store';
 
 function App() {
+  const store = generateStore()
   return (
     <>
-      <Main/>
+      <Provider store={store}>
+          <Main/>
+      </Provider>
     </>
   );
 }
