@@ -22,7 +22,7 @@ export const Form = () => {
                 <form  
                     className="form" 
                     action={`
-                        mailto:tonykurosaki117@gmail.com?subject=Contacto&body=
+                        mailto:jobs@talentscode.com?subject=Contacto&body=
                         Nombre%3A${contactData.name}%0A
                         Telefono%3A${contactData.phone}%0A
                         Correo%3A${contactData.email}%0A
