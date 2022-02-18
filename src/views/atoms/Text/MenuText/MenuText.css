@@ -1,11 +1,17 @@
 .menu-text {
   width: 100%;
+  height: 50px;
+  line-height: 50px;
   font-size: 16px;
   cursor: pointer;
   color: whitesmoke;
   margin: 0;
   text-align: center;
 }
+.menu-text:hover {
+  background-color: #0fbd54;
+}
+
 a {
   text-decoration: none;
   color: white;
