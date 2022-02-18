@@ -32,3 +32,6 @@
 .input:hover {
   border: 1px solid #10f86b;
 }
+button {
+  cursor: pointer;
+}

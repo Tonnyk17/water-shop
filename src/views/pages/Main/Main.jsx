@@ -23,11 +23,15 @@ export const Main = () => {
             <ServicesSection 
                 type={'left'} 
                 content={'Venta de dispensadores'}
-                product={selector.products.Venta}/>
+                product={selector.products.Venta}
+                id='Venta'
+            />
+                
             <ServicesSection 
                 type={'right'} 
                 content={'Renta de dispensadores'}
                 product={selector.products.Renta}
+                id='Renta'
             />
             <Form/>
         </>

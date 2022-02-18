@@ -7,11 +7,15 @@ export const Navbar = () => {
     return(
         <>
             <div className="navbar">
-                <h1 className="navbar-title">WaterShop</h1>
+                <h1 className="navbar-title">
+                    <a href="#">
+                    WaterShop
+                    </a>
+                </h1>
                 <div className="menu-container">
-                    <MenuText content={'Inicio'}/>
+                    <MenuText content={'Inicio'} redirect="#"/>
                     <MenuItem content={'Servicios'}/>
-                    <MenuText content={'Contacto'}/>
+                    <MenuText content={'Contacto'} redirect="#Contact"/>
                 </div>
             </div>
         </>

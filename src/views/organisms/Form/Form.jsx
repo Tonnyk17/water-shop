@@ -17,7 +17,7 @@ export const Form = () => {
     }
     return(
         <>
-            <div className="form-container">
+            <div className="form-container" id="Contact">
                 <TitleText content={'Contacto'}/>
                 <form  
                     className="form" 
